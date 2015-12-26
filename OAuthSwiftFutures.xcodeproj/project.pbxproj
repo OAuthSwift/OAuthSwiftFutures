@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F67268E2FC9244112364F0E /* Pods_OAuthSwiftFuturesTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB316136C6681C4099EBDEA /* Pods_OAuthSwiftFuturesTVOS.framework */; };
 		9C0D3E7886C6DC1E105BF9F5 /* Pods_OAuthSwiftFuturesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7885292CD4C29D89BE45CA2E /* Pods_OAuthSwiftFuturesIOS.framework */; };
 		C3715AAAF2458E8E5DE07617 /* Pods_OAuthSwiftFuturesOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2957204A0E8B583C575E0180 /* Pods_OAuthSwiftFuturesOSX.framework */; };
+		C40162C11C2EC26100AE1B5C /* OAuthSwift+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D74B951C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift */; };
 		C4D74B8E1C24B9D20071AD3E /* OAuthSwiftFutures.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D74B8D1C24B9D20071AD3E /* OAuthSwiftFutures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D74B961C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D74B951C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift */; };
 		C4D74B9F1C24BA900071AD3E /* OAuthSwiftFuturesOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D74B9E1C24BA900071AD3E /* OAuthSwiftFuturesOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,7 +24,10 @@
 /* Begin PBXFileReference section */
 		2957204A0E8B583C575E0180 /* Pods_OAuthSwiftFuturesOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwiftFuturesOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FE37FAA67468CB53A58E11 /* Pods-OAuthSwiftFuturesIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesIOS/Pods-OAuthSwiftFuturesIOS.release.xcconfig"; sourceTree = "<group>"; };
+		6729F741BD955CCCEC1996E6 /* Pods-OAuthSwiftFuturesTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesTVOS/Pods-OAuthSwiftFuturesTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7885292CD4C29D89BE45CA2E /* Pods_OAuthSwiftFuturesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwiftFuturesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB316136C6681C4099EBDEA /* Pods_OAuthSwiftFuturesTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwiftFuturesTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EABBDFFD317B19779A5C373 /* Pods-OAuthSwiftFuturesTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesTVOS/Pods-OAuthSwiftFuturesTVOS.release.xcconfig"; sourceTree = "<group>"; };
 		95DEED4301D73739CD022808 /* Pods-OAuthSwiftFuturesOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesOSX/Pods-OAuthSwiftFuturesOSX.release.xcconfig"; sourceTree = "<group>"; };
 		B0AB01512E5BEC556F449945 /* Pods-OAuthSwiftFuturesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesIOS/Pods-OAuthSwiftFuturesIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C49B2E63E5BB20DF7B3E4D73 /* Pods-OAuthSwiftFuturesOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesOSX/Pods-OAuthSwiftFuturesOSX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F67268E2FC9244112364F0E /* Pods_OAuthSwiftFuturesTVOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +79,8 @@
 				29FE37FAA67468CB53A58E11 /* Pods-OAuthSwiftFuturesIOS.release.xcconfig */,
 				C49B2E63E5BB20DF7B3E4D73 /* Pods-OAuthSwiftFuturesOSX.debug.xcconfig */,
 				95DEED4301D73739CD022808 /* Pods-OAuthSwiftFuturesOSX.release.xcconfig */,
+				6729F741BD955CCCEC1996E6 /* Pods-OAuthSwiftFuturesTVOS.debug.xcconfig */,
+				7EABBDFFD317B19779A5C373 /* Pods-OAuthSwiftFuturesTVOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 			children = (
 				7885292CD4C29D89BE45CA2E /* Pods_OAuthSwiftFuturesIOS.framework */,
 				2957204A0E8B583C575E0180 /* Pods_OAuthSwiftFuturesOSX.framework */,
+				7AB316136C6681C4099EBDEA /* Pods_OAuthSwiftFuturesTVOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,10 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D74BB11C24BAD50071AD3E /* Build configuration list for PBXNativeTarget "OAuthSwiftFuturesTVOS" */;
 			buildPhases = (
+				90AC2B0BF56C87377C658A6B /* Check Pods Manifest.lock */,
 				C4D74BA51C24BAD50071AD3E /* Sources */,
 				C4D74BA61C24BAD50071AD3E /* Frameworks */,
 				C4D74BA71C24BAD50071AD3E /* Headers */,
 				C4D74BA81C24BAD50071AD3E /* Resources */,
+				FFA6CC71479F855F38BD8062 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +332,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwiftFuturesOSX/Pods-OAuthSwiftFuturesOSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		90AC2B0BF56C87377C658A6B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B4E7BE17CB21ADEC00225040 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +377,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		FFA6CC71479F855F38BD8062 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwiftFuturesTVOS/Pods-OAuthSwiftFuturesTVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -376,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40162C11C2EC26100AE1B5C /* OAuthSwift+BrightFutures.swift in Sources */,
 				C4D74BB51C24C0E40071AD3E /* OAuthSwiftClient+BrightFutures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +597,7 @@
 		};
 		C4D74BAF1C24BAD50071AD3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6729F741BD955CCCEC1996E6 /* Pods-OAuthSwiftFuturesTVOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -576,6 +619,7 @@
 		};
 		C4D74BB01C24BAD50071AD3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EABBDFFD317B19779A5C373 /* Pods-OAuthSwiftFuturesTVOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
