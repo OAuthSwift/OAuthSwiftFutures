@@ -15,16 +15,29 @@ It's build on top [BrightFutures](https://github.com/Thomvis/BrightFutures) to a
 
 * Podfile
 
-```
+```ruby
 use_frameworks!
 
-pod "OAuthSwiftFutures"
+pod 'OAuthSwiftFutures', '~> 1.0.0'
 ```
+
+### Support Carthage
+
+* Install Carthage (https://github.com/Carthage/Carthage)
+* Create Cartfile file
+```
+github "OAuthSwift/OAuthSwiftFuture" ~> 1.0.0
+```
+* Run `carthage update`.
+* On your application targets’ “General” settings tab, in the “Embedded Binaries” section, drag and drop OAuthSwift.framework and the dependencies from the Carthage/Build/"OSNAME" folder on disk.
+
 ## How to use
+
 ### OAuth1.0
+
 ```swift
-let authorizeFuture = oauthswift.authorizeFuture(NSURL(string: "oauth-swift://oauth-callback/twitter")!)
-authorizeFuture.onSuccess { credential, response, parameters in
+let (authorize, handle) = oauthswift.authorizeFuture(withCallbackURL: "oauth-swift://oauth-callback/twitter")
+authorize.onSuccess { credential, response, parameters in
   print(credential.oauth_token)
   print(credential.oauth_token_secret)
   print(parameters["user_id"])
@@ -34,23 +47,40 @@ authorizeFuture.onFailure { error in
 }
 ```
 ### OAuth2.0
+
 ```swift
-let authorizeFuture = oauthswift.authorizeFuture(NSURL(string: "oauth-swift://oauth-callback/facebook")!,
+let (authorize, handle) = oauthswift.authorizeFuture(withCallbackURL: "oauth-swift://oauth-callback/facebook",
     scope: "likes+comments", state:"generatedone")
-authorizeFuture.onSuccess { credential, response, parameters in
+authorize.onSuccess { credential, response, parameters in
   print(credential.oauth_token)
 }
-authorizeFuture.onFailure { error in
-  print(error.localizedDescription)
+authorize.onFailure { error in
+  print("\(error)")
+}
+```
+
+### Request
+
+Use one the client new functions
+```swift
+let (authorize, handle) = oauthswift.client.getFuture("https://api.linkedin.com/v1/people/~")
+authorize.onSuccess { data, response in
+  let dataString = String(data: data, encoding: String.Encoding.utf8)
+  print(dataString)
+}
+authorize.onFailure { error in
+  print("\(error)")
 }
 ```
 
 ### Playing with Future
-```
+
+```swift
 // after created
-let requestFuture = authorizeFuture.flatMap { tuple -> Future<(data: NSData, response: NSHTTPURLResponse), NSError> in
+let requestFuture = authorize.flatMap { tuple -> Future<(data: Data, response: HTTPURLResponse), OAuthSwiftError> in
     // will be executed only if authorization succeed
-    return oauthswift.client.getFuture("https://api.linkedin.com/v1/people/~")
+    let (future, _) = oauthswift.client.getFuture("https://api.linkedin.com/v1/people/~")
+    return future
 }
 requestFuture.onSuccess { data, response in
   print(data)

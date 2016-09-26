@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F67268E2FC9244112364F0E /* Pods_OAuthSwiftFuturesTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB316136C6681C4099EBDEA /* Pods_OAuthSwiftFuturesTVOS.framework */; };
-		9C0D3E7886C6DC1E105BF9F5 /* Pods_OAuthSwiftFuturesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7885292CD4C29D89BE45CA2E /* Pods_OAuthSwiftFuturesIOS.framework */; };
-		C3715AAAF2458E8E5DE07617 /* Pods_OAuthSwiftFuturesOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2957204A0E8B583C575E0180 /* Pods_OAuthSwiftFuturesOSX.framework */; };
 		C40162C11C2EC26100AE1B5C /* OAuthSwift+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D74B951C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift */; };
+		C44669231D99792B00ABE260 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44669201D99792B00ABE260 /* BrightFutures.framework */; };
+		C44669241D99792B00ABE260 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44669211D99792B00ABE260 /* OAuthSwift.framework */; };
+		C44669251D99792B00ABE260 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44669221D99792B00ABE260 /* Result.framework */; };
+		C44669291D99794000ABE260 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44669261D99794000ABE260 /* BrightFutures.framework */; };
+		C446692A1D99794000ABE260 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44669271D99794000ABE260 /* OAuthSwift.framework */; };
+		C446692B1D99794000ABE260 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44669281D99794000ABE260 /* Result.framework */; };
+		C446692F1D99795300ABE260 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C446692C1D99795300ABE260 /* BrightFutures.framework */; };
+		C44669301D99795300ABE260 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C446692D1D99795300ABE260 /* OAuthSwift.framework */; };
+		C44669311D99795300ABE260 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C446692E1D99795300ABE260 /* Result.framework */; };
 		C4D74B8E1C24B9D20071AD3E /* OAuthSwiftFutures.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D74B8D1C24B9D20071AD3E /* OAuthSwiftFutures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D74B961C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D74B951C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift */; };
 		C4D74B9F1C24BA900071AD3E /* OAuthSwiftFuturesOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D74B9E1C24BA900071AD3E /* OAuthSwiftFuturesOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,15 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2957204A0E8B583C575E0180 /* Pods_OAuthSwiftFuturesOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwiftFuturesOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29FE37FAA67468CB53A58E11 /* Pods-OAuthSwiftFuturesIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesIOS/Pods-OAuthSwiftFuturesIOS.release.xcconfig"; sourceTree = "<group>"; };
-		6729F741BD955CCCEC1996E6 /* Pods-OAuthSwiftFuturesTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesTVOS/Pods-OAuthSwiftFuturesTVOS.debug.xcconfig"; sourceTree = "<group>"; };
-		7885292CD4C29D89BE45CA2E /* Pods_OAuthSwiftFuturesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwiftFuturesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AB316136C6681C4099EBDEA /* Pods_OAuthSwiftFuturesTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwiftFuturesTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EABBDFFD317B19779A5C373 /* Pods-OAuthSwiftFuturesTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesTVOS/Pods-OAuthSwiftFuturesTVOS.release.xcconfig"; sourceTree = "<group>"; };
-		95DEED4301D73739CD022808 /* Pods-OAuthSwiftFuturesOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesOSX/Pods-OAuthSwiftFuturesOSX.release.xcconfig"; sourceTree = "<group>"; };
-		B0AB01512E5BEC556F449945 /* Pods-OAuthSwiftFuturesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesIOS/Pods-OAuthSwiftFuturesIOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C49B2E63E5BB20DF7B3E4D73 /* Pods-OAuthSwiftFuturesOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftFuturesOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftFuturesOSX/Pods-OAuthSwiftFuturesOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		C44669201D99792B00ABE260 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		C44669211D99792B00ABE260 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		C44669221D99792B00ABE260 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C44669261D99794000ABE260 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/tvOS/BrightFutures.framework; sourceTree = "<group>"; };
+		C44669271D99794000ABE260 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/tvOS/OAuthSwift.framework; sourceTree = "<group>"; };
+		C44669281D99794000ABE260 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
+		C446692C1D99795300ABE260 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = "<group>"; };
+		C446692D1D99795300ABE260 /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/Mac/OAuthSwift.framework; sourceTree = "<group>"; };
+		C446692E1D99795300ABE260 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		C4D74B8A1C24B9D20071AD3E /* OAuthSwiftFuturesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwiftFuturesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D74B8D1C24B9D20071AD3E /* OAuthSwiftFutures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthSwiftFutures.h; sourceTree = "<group>"; };
 		C4D74B8F1C24B9D20071AD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,7 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0D3E7886C6DC1E105BF9F5 /* Pods_OAuthSwiftFuturesIOS.framework in Frameworks */,
+				C44669251D99792B00ABE260 /* Result.framework in Frameworks */,
+				C44669241D99792B00ABE260 /* OAuthSwift.framework in Frameworks */,
+				C44669231D99792B00ABE260 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3715AAAF2458E8E5DE07617 /* Pods_OAuthSwiftFuturesOSX.framework in Frameworks */,
+				C44669311D99795300ABE260 /* Result.framework in Frameworks */,
+				C44669301D99795300ABE260 /* OAuthSwift.framework in Frameworks */,
+				C446692F1D99795300ABE260 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,35 +75,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F67268E2FC9244112364F0E /* Pods_OAuthSwiftFuturesTVOS.framework in Frameworks */,
+				C446692B1D99794000ABE260 /* Result.framework in Frameworks */,
+				C446692A1D99794000ABE260 /* OAuthSwift.framework in Frameworks */,
+				C44669291D99794000ABE260 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9E9ACB47A682F4FFBC9DDD5B /* Pods */ = {
+		2E8D5391966005442AABBC83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B0AB01512E5BEC556F449945 /* Pods-OAuthSwiftFuturesIOS.debug.xcconfig */,
-				29FE37FAA67468CB53A58E11 /* Pods-OAuthSwiftFuturesIOS.release.xcconfig */,
-				C49B2E63E5BB20DF7B3E4D73 /* Pods-OAuthSwiftFuturesOSX.debug.xcconfig */,
-				95DEED4301D73739CD022808 /* Pods-OAuthSwiftFuturesOSX.release.xcconfig */,
-				6729F741BD955CCCEC1996E6 /* Pods-OAuthSwiftFuturesTVOS.debug.xcconfig */,
-				7EABBDFFD317B19779A5C373 /* Pods-OAuthSwiftFuturesTVOS.release.xcconfig */,
+				C446691F1D99791600ABE260 /* Mac */,
+				C446691E1D99790F00ABE260 /* tvOS */,
+				C446691D1D99790900ABE260 /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C446691C1D9973D700ABE260 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C4D74B951C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift */,
+				C4D74BB21C24C0E40071AD3E /* OAuthSwiftClient+BrightFutures.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C446691D1D99790900ABE260 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C44669201D99792B00ABE260 /* BrightFutures.framework */,
+				C44669211D99792B00ABE260 /* OAuthSwift.framework */,
+				C44669221D99792B00ABE260 /* Result.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C446691E1D99790F00ABE260 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				C44669261D99794000ABE260 /* BrightFutures.framework */,
+				C44669271D99794000ABE260 /* OAuthSwift.framework */,
+				C44669281D99794000ABE260 /* Result.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		C446691F1D99791600ABE260 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				C446692C1D99795300ABE260 /* BrightFutures.framework */,
+				C446692D1D99795300ABE260 /* OAuthSwift.framework */,
+				C446692E1D99795300ABE260 /* Result.framework */,
+			);
+			name = Mac;
 			sourceTree = "<group>";
 		};
 		C4D74B801C24B9D20071AD3E = {
 			isa = PBXGroup;
 			children = (
+				C446691C1D9973D700ABE260 /* Sources */,
 				C4D74B8C1C24B9D20071AD3E /* OAuthSwiftFutures */,
 				C4D74B9D1C24BA900071AD3E /* OAuthSwiftFuturesOSX */,
 				C4D74BAB1C24BAD50071AD3E /* OAuthSwiftFuturesTVOS */,
 				C4D74B8B1C24B9D20071AD3E /* Products */,
-				9E9ACB47A682F4FFBC9DDD5B /* Pods */,
-				F53712CAE0773DE4A117DE61 /* Frameworks */,
+				2E8D5391966005442AABBC83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +158,6 @@
 		C4D74B8C1C24B9D20071AD3E /* OAuthSwiftFutures */ = {
 			isa = PBXGroup;
 			children = (
-				C4D74B951C24B9E10071AD3E /* OAuthSwift+BrightFutures.swift */,
-				C4D74BB21C24C0E40071AD3E /* OAuthSwiftClient+BrightFutures.swift */,
 				C4D74B8D1C24B9D20071AD3E /* OAuthSwiftFutures.h */,
 				C4D74B8F1C24B9D20071AD3E /* Info.plist */,
 			);
@@ -134,16 +180,6 @@
 				C4D74BAE1C24BAD50071AD3E /* Info.plist */,
 			);
 			path = OAuthSwiftFuturesTVOS;
-			sourceTree = "<group>";
-		};
-		F53712CAE0773DE4A117DE61 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7885292CD4C29D89BE45CA2E /* Pods_OAuthSwiftFuturesIOS.framework */,
-				2957204A0E8B583C575E0180 /* Pods_OAuthSwiftFuturesOSX.framework */,
-				7AB316136C6681C4099EBDEA /* Pods_OAuthSwiftFuturesTVOS.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,12 +216,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D74B921C24B9D20071AD3E /* Build configuration list for PBXNativeTarget "OAuthSwiftFuturesIOS" */;
 			buildPhases = (
-				FA1FB514EEA3EE6362DD3CB7 /* Check Pods Manifest.lock */,
 				C4D74B851C24B9D20071AD3E /* Sources */,
 				C4D74B861C24B9D20071AD3E /* Frameworks */,
 				C4D74B871C24B9D20071AD3E /* Headers */,
 				C4D74B881C24B9D20071AD3E /* Resources */,
-				02EB2192E4229C2086126C2E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,12 +234,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D74BA11C24BA900071AD3E /* Build configuration list for PBXNativeTarget "OAuthSwiftFuturesOSX" */;
 			buildPhases = (
-				B4E7BE17CB21ADEC00225040 /* Check Pods Manifest.lock */,
 				C4D74B971C24BA900071AD3E /* Sources */,
 				C4D74B981C24BA900071AD3E /* Frameworks */,
 				C4D74B991C24BA900071AD3E /* Headers */,
 				C4D74B9A1C24BA900071AD3E /* Resources */,
-				0DD1851ACBE46816E3902852 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,12 +252,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4D74BB11C24BAD50071AD3E /* Build configuration list for PBXNativeTarget "OAuthSwiftFuturesTVOS" */;
 			buildPhases = (
-				90AC2B0BF56C87377C658A6B /* Check Pods Manifest.lock */,
 				C4D74BA51C24BAD50071AD3E /* Sources */,
 				C4D74BA61C24BAD50071AD3E /* Frameworks */,
 				C4D74BA71C24BAD50071AD3E /* Headers */,
 				C4D74BA81C24BAD50071AD3E /* Resources */,
-				FFA6CC71479F855F38BD8062 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,7 +272,7 @@
 		C4D74B811C24B9D20071AD3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = phimage;
 				TargetAttributes = {
 					C4D74B891C24B9D20071AD3E = {
@@ -251,6 +281,7 @@
 					};
 					C4D74B9B1C24BA900071AD3E = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					C4D74BA91C24BAD50071AD3E = {
 						CreatedOnToolsVersion = 7.2;
@@ -301,99 +332,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		02EB2192E4229C2086126C2E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwiftFuturesIOS/Pods-OAuthSwiftFuturesIOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0DD1851ACBE46816E3902852 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwiftFuturesOSX/Pods-OAuthSwiftFuturesOSX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90AC2B0BF56C87377C658A6B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B4E7BE17CB21ADEC00225040 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FA1FB514EEA3EE6362DD3CB7 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FFA6CC71479F855F38BD8062 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwiftFuturesTVOS/Pods-OAuthSwiftFuturesTVOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		C4D74B851C24B9D20071AD3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -438,8 +376,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -486,8 +426,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -507,6 +449,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -516,13 +459,17 @@
 		};
 		C4D74B931C24B9D20071AD3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0AB01512E5BEC556F449945 /* Pods-OAuthSwiftFuturesIOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OAuthSwiftFutures/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -530,37 +477,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C4D74B941C24B9D20071AD3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29FE37FAA67468CB53A58E11 /* Pods-OAuthSwiftFuturesIOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OAuthSwiftFutures/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.phimage.OAuthSwiftFutures;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C4D74BA21C24BA900071AD3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C49B2E63E5BB20DF7B3E4D73 /* Pods-OAuthSwiftFuturesOSX.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = OAuthSwiftFuturesOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -570,19 +526,23 @@
 				PRODUCT_NAME = OAuthSwiftFutures;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C4D74BA31C24BA900071AD3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95DEED4301D73739CD022808 /* Pods-OAuthSwiftFuturesOSX.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = OAuthSwiftFuturesOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -592,18 +552,23 @@
 				PRODUCT_NAME = OAuthSwiftFutures;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C4D74BAF1C24BAD50071AD3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6729F741BD955CCCEC1996E6 /* Pods-OAuthSwiftFuturesTVOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = OAuthSwiftFuturesTVOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -612,6 +577,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -619,13 +585,17 @@
 		};
 		C4D74BB01C24BAD50071AD3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EABBDFFD317B19779A5C373 /* Pods-OAuthSwiftFuturesTVOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = OAuthSwiftFuturesTVOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -633,6 +603,7 @@
 				PRODUCT_NAME = OAuthSwiftFutures;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};

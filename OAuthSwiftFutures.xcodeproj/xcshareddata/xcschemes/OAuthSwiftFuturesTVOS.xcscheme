@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4D74B891C24B9D20071AD3E"
-               BuildableName = "OAuthSwiftFuturesIOS.framework"
-               BlueprintName = "OAuthSwiftFuturesIOS"
+               BlueprintIdentifier = "C4D74BA91C24BAD50071AD3E"
+               BuildableName = "OAuthSwiftFutures.framework"
+               BlueprintName = "OAuthSwiftFuturesTVOS"
                ReferencedContainer = "container:OAuthSwiftFutures.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4D74B891C24B9D20071AD3E"
-            BuildableName = "OAuthSwiftFuturesIOS.framework"
-            BlueprintName = "OAuthSwiftFuturesIOS"
+            BlueprintIdentifier = "C4D74BA91C24BAD50071AD3E"
+            BuildableName = "OAuthSwiftFutures.framework"
+            BlueprintName = "OAuthSwiftFuturesTVOS"
             ReferencedContainer = "container:OAuthSwiftFutures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4D74B891C24B9D20071AD3E"
-            BuildableName = "OAuthSwiftFuturesIOS.framework"
-            BlueprintName = "OAuthSwiftFuturesIOS"
+            BlueprintIdentifier = "C4D74BA91C24BAD50071AD3E"
+            BuildableName = "OAuthSwiftFutures.framework"
+            BlueprintName = "OAuthSwiftFuturesTVOS"
             ReferencedContainer = "container:OAuthSwiftFutures.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

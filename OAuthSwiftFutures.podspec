@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name = 'OAuthSwiftFutures'
-  s.version = '0.1.0'
+  s.version = '1.0.0'
   s.license = 'MIT'
   s.summary = 'Bring you futures to OAuthSwift.'
   s.description  = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/OAuthSwift/OAuthSwiftFutures.git', :tag => s.version }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files = 'OAuthSwiftFutures/*.swift'
+  s.source_files = 'Sources/*.swift'
 
   s.dependency 'OAuthSwift'
   s.dependency 'BrightFutures'
