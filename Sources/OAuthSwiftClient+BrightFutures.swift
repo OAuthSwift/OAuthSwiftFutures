@@ -13,7 +13,7 @@ import BrightFutures
 
 extension OAuthSwiftClient {
 
-    public typealias FutureSuccess = (data: Data, response: HTTPURLResponse)
+    public typealias FutureSuccess = OAuthSwiftResponse
     public typealias FutureError = OAuthSwiftError
     public typealias FutureResult = (future: Future<FutureSuccess, FutureError>, handle: OAuthSwiftRequestHandle?)
 
@@ -40,11 +40,10 @@ extension OAuthSwiftClient {
     public func requestFuture(_ url: String, method: OAuthSwiftHTTPRequest.Method, parameters: OAuthSwift.Parameters = [:], headers: OAuthSwift.Headers? = nil) -> FutureResult {
        
         let promise = Promise<FutureSuccess, FutureError>()
-
         let handle = self.request(
             url, method: method, parameters: parameters, headers: headers,
-            success: { data, response in
-                promise.success((data: data, response: response))
+            success: { response in
+                promise.success(response)
             },
             failure: { error in
                 promise.failure(error)
@@ -60,8 +59,8 @@ extension OAuthSwiftClient {
 
         let handle = self.postImage(
             urlString, parameters: parameters, image: image,
-            success: { data, response in
-                promise.success((data: data, response: response))
+            success: { response in
+                promise.success(response)
             },
             failure: { error in
                 promise.failure(error)
@@ -75,8 +74,8 @@ extension OAuthSwiftClient {
         let promise = Promise<FutureSuccess, FutureError>()
 
         let handle = self.postMultiPartRequest(url, method: method, parameters: parameters, multiparts: multiparts ,
-            success: {data, response in
-                promise.success((data: data, response: response))
+            success: {response in
+                promise.success(response)
             }, failure: { error in
                 promise.failure(error)
             }
