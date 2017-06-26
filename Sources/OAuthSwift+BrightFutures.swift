@@ -11,7 +11,7 @@ import OAuthSwift
 import BrightFutures
 
 extension OAuthSwift {
-    public typealias FutureSuccess = (credential: OAuthSwiftCredential, response: URLResponse?, parameters: OAuthSwift.Parameters) // see OAuthSwift.TokenSuccessHandler
+    public typealias FutureSuccess = (credential: OAuthSwiftCredential, response: OAuthSwiftResponse?, parameters: OAuthSwift.Parameters) // see OAuthSwift.TokenSuccessHandler
     public typealias FutureError = OAuthSwiftError
     public typealias FutureResult = (future: Future<FutureSuccess, FutureError>, handle: OAuthSwiftRequestHandle?)
 }
@@ -21,13 +21,13 @@ extension OAuth1Swift {
     
     open func authorizeFuture(withCallbackURL callbackURL: String) -> FutureResult {
         let promise = Promise<FutureSuccess, FutureError>()
-        
-        let handle = self.authorize(
+
+        let handle = authorize(
             withCallbackURL: callbackURL,
             success: { credential, response, parameters in
                 promise.success((credential, response, parameters))
             },
-            failure:{ error in
+            failure: { error in
                 promise.failure(error)
             }
         )
@@ -39,7 +39,7 @@ extension OAuth1Swift {
 
         let promise = Promise<FutureSuccess, FutureError>()
         
-        let handle = self.authorize(
+        let handle = authorize(
             withCallbackURL: callbackURL,
             success: { credential, response, parameters in
                 promise.success((credential, response, parameters))
@@ -60,7 +60,7 @@ extension OAuth2Swift {
 
         let promise = Promise<FutureSuccess, FutureError>()
         
-         let handle = self.authorize(
+         let handle = authorize(
             withCallbackURL: callbackURL, scope: scope, state: state, parameters: parameters, headers: headers,
             success: { credential, response, parameters in
                 promise.success((credential, response, parameters))
@@ -77,7 +77,7 @@ extension OAuth2Swift {
         
         let promise = Promise<FutureSuccess, FutureError>()
         
-        let handle = self.authorize(
+        let handle = authorize(
             withCallbackURL: callbackURL, scope: scope, state: state, parameters: parameters, headers: headers,
             success: { credential, response, parameters in
                 promise.success((credential, response, parameters))
