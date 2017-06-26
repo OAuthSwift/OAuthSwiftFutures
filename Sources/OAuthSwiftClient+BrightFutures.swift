@@ -18,29 +18,29 @@ extension OAuthSwiftClient {
     public typealias FutureResult = (future: Future<FutureSuccess, FutureError>, handle: OAuthSwiftRequestHandle?)
 
     public func getFuture(_ urlString: String, parameters: OAuthSwift.Parameters = [:], headers: OAuthSwift.Headers? = nil) -> FutureResult {
-        return self.requestFuture(urlString, method: .GET, parameters: parameters, headers: headers)
+        return requestFuture(urlString, method: .GET, parameters: parameters, headers: headers)
     }
 
     public func postFuture(_ urlString: String, parameters: OAuthSwift.Parameters = [:], headers: OAuthSwift.Headers? = nil) -> FutureResult {
-        return self.requestFuture(urlString, method: .POST, parameters: parameters, headers: headers)
+        return requestFuture(urlString, method: .POST, parameters: parameters, headers: headers)
     }
 
     public func putFuture(_ urlString: String, parameters: OAuthSwift.Parameters = [:], headers: OAuthSwift.Headers? = nil) -> FutureResult {
-        return self.requestFuture(urlString, method: .PUT, parameters: parameters, headers: headers)
+        return requestFuture(urlString, method: .PUT, parameters: parameters, headers: headers)
     }
 
     public func deleteFuture(_ urlString: String, parameters: OAuthSwift.Parameters = [:], headers: OAuthSwift.Headers? = nil) -> FutureResult {
-        return self.requestFuture(urlString, method: .DELETE, parameters: parameters, headers: headers)
+        return requestFuture(urlString, method: .DELETE, parameters: parameters, headers: headers)
     }
 
     public func patchFuture(_ urlString: String, parameters: OAuthSwift.Parameters = [:], headers: OAuthSwift.Headers? = nil) -> FutureResult {
-        return self.requestFuture(urlString, method: .PATCH, parameters: parameters, headers: headers)
+        return requestFuture(urlString, method: .PATCH, parameters: parameters, headers: headers)
     }
 
     public func requestFuture(_ url: String, method: OAuthSwiftHTTPRequest.Method, parameters: OAuthSwift.Parameters = [:], headers: OAuthSwift.Headers? = nil) -> FutureResult {
        
         let promise = Promise<FutureSuccess, FutureError>()
-        let handle = self.request(
+        let handle = request(
             url, method: method, parameters: parameters, headers: headers,
             success: { response in
                 promise.success(response)
@@ -57,7 +57,7 @@ extension OAuthSwiftClient {
         
         let promise = Promise<FutureSuccess, FutureError>()
 
-        let handle = self.postImage(
+        let handle = postImage(
             urlString, parameters: parameters, image: image,
             success: { response in
                 promise.success(response)
@@ -73,7 +73,7 @@ extension OAuthSwiftClient {
         
         let promise = Promise<FutureSuccess, FutureError>()
 
-        let handle = self.postMultiPartRequest(url, method: method, parameters: parameters, multiparts: multiparts ,
+        let handle = postMultiPartRequest(url, method: method, parameters: parameters, multiparts: multiparts ,
             success: {response in
                 promise.success(response)
             }, failure: { error in

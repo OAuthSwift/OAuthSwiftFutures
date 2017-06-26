@@ -39,7 +39,7 @@ extension OAuth1Swift {
 
         let promise = Promise<FutureSuccess, FutureError>()
         
-        let handle = self.authorize(
+        let handle = authorize(
             withCallbackURL: callbackURL,
             success: { credential, response, parameters in
                 promise.success((credential, response, parameters))
@@ -60,7 +60,7 @@ extension OAuth2Swift {
 
         let promise = Promise<FutureSuccess, FutureError>()
         
-         let handle = self.authorize(
+         let handle = authorize(
             withCallbackURL: callbackURL, scope: scope, state: state, parameters: parameters, headers: headers,
             success: { credential, response, parameters in
                 promise.success((credential, response, parameters))
@@ -77,7 +77,7 @@ extension OAuth2Swift {
         
         let promise = Promise<FutureSuccess, FutureError>()
         
-        let handle = self.authorize(
+        let handle = authorize(
             withCallbackURL: callbackURL, scope: scope, state: state, parameters: parameters, headers: headers,
             success: { credential, response, parameters in
                 promise.success((credential, response, parameters))
