@@ -26,7 +26,7 @@ pod 'OAuthSwiftFutures', '~> 1.0.0'
 * Install Carthage (https://github.com/Carthage/Carthage)
 * Create Cartfile file
 ```
-github "OAuthSwift/OAuthSwiftFuture" ~> 1.0.0
+github "OAuthSwift/OAuthSwiftFutures" ~> 1.0.0
 ```
 * Run `carthage update`.
 * On your application targets’ “General” settings tab, in the “Embedded Binaries” section, drag and drop OAuthSwift.framework and the dependencies from the Carthage/Build/"OSNAME" folder on disk.
